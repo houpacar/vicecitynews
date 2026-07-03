@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Items — Descriptions — Vice City News</title>
+<meta name="description" content="Fiches descriptives des objets et équipements de GTA 6.">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-scene"></div>
+<div class="bg-grid"></div>
+
+<div class="demo-banner">🚧 Site de démonstration — contenu placeholder en attendant les vraies actualités GTA 6.</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+      <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+        <li><a href="guides.html" class="nav-link">Guides</a></li>
+        <li><a href="astuces.html" class="nav-link">Astuces</a></li>
+        <li class="nav-item dropdown open">
+          <a href="descriptions.html" class="nav-link active">Descriptions</a>
+          <div class="dropdown-menu">
+            <a href="descriptions-armes.html">Armes</a>
+            <a href="descriptions-vehicules.html">Véhicules</a>
+            <a href="descriptions-maps.html">Maps</a>
+            <a href="descriptions-items.html">Items</a>
+          </div>
+        </li>
+        <li><a href="forum.html" class="nav-link">Forum</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;"><a href="descriptions.html" style="color:var(--cyan);">Descriptions</a> / Items</p>
+      <div class="section-head">
+        <div>
+          <h2>Items &amp; équipements</h2>
+          <p>Objets, tenues et équipements utiles disponibles dans GTA 6.</p>
+        </div>
+      </div>
+      <div class="filters" data-target="#items-list .card">
+        <button class="filter-chip active" data-filter="all">Tous</button>
+        <button class="filter-chip" data-filter="equipement">Équipement</button>
+        <button class="filter-chip" data-filter="consommable">Consommables</button>
+        <button class="filter-chip" data-filter="tenue">Tenues</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="items-list" style="padding-top:0;">
+    <div class="container">
+      <div class="grid grid-4">
+        <div class="card item-card" data-category="equipement">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/></svg></div>
+          <h3>Gilet pare-balles — exemple</h3>
+          <p class="category">Équipement · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="equipement">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 18h6"/></svg></div>
+          <h3>Téléphone portable — exemple</h3>
+          <p class="category">Équipement · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="consommable">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/></svg></div>
+          <h3>Kit de soin — exemple</h3>
+          <p class="category">Consommable · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="consommable">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2h8M9 2v6l-5 12h16L15 8V2"/></svg></div>
+          <h3>Boisson énergisante — exemple</h3>
+          <p class="category">Consommable · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="tenue">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l6 3 6-3 3 5-4 2v11H7V10L3 8z"/></svg></div>
+          <h3>Tenue décontractée — exemple</h3>
+          <p class="category">Tenue · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="tenue">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l6 3 6-3 3 5-4 2v11H7V10L3 8z"/></svg></div>
+          <h3>Costume de soirée — exemple</h3>
+          <p class="category">Tenue · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="equipement">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Masque — exemple</h3>
+          <p class="category">Équipement · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="consommable">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v4H4zM4 12h16v8H4z"/></svg></div>
+          <h3>Argent liquide — exemple</h3>
+          <p class="category">Consommable · fiche à venir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">
+          <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+          <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+        </div>
+        <p>Site communautaire indépendant dédié à l'actualité, aux guides et à la communauté de GTA 6.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="astuces.html">Astuces</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Descriptions</h4>
+        <ul>
+          <li><a href="descriptions-armes.html">Armes</a></li>
+          <li><a href="descriptions-vehicules.html">Véhicules</a></li>
+          <li><a href="descriptions-maps.html">Maps</a></li>
+          <li><a href="descriptions-items.html">Items</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="#">Discord (bientôt)</a></li>
+          <li><a href="#">X / Twitter (bientôt)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p><strong>Vice City News</strong> est un site de fans indépendant, non-officiel et non affilié à Rockstar Games, Take-Two Interactive ou toute entité liée. « Grand Theft Auto », « GTA » et « Vice City » sont des marques déposées de leurs propriétaires respectifs. Les informations publiées proviennent de sources publiques et sont fournies à titre informatif uniquement. Aucun visuel, logo ou média protégé par le droit d'auteur de Rockstar Games n'est utilisé sur ce site.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vice City News</span>
+      <span>Contenu de démonstration</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

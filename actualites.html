@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actualités — Vice City News</title>
+<meta name="description" content="Toute l'actualité GTA 6 classée par thème et par date : annonces officielles, gameplay, rumeurs et plus.">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-scene"></div>
+<div class="bg-grid"></div>
+
+<div class="demo-banner">🚧 Site de démonstration — contenu placeholder en attendant les vraies actualités GTA 6.</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+      <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link active">Actualités</a></li>
+        <li><a href="guides.html" class="nav-link">Guides</a></li>
+        <li><a href="astuces.html" class="nav-link">Astuces</a></li>
+        <li class="nav-item dropdown">
+          <a href="descriptions.html" class="nav-link">Descriptions</a>
+          <div class="dropdown-menu">
+            <a href="descriptions-armes.html">Armes</a>
+            <a href="descriptions-vehicules.html">Véhicules</a>
+            <a href="descriptions-maps.html">Maps</a>
+            <a href="descriptions-items.html">Items</a>
+          </div>
+        </li>
+        <li><a href="forum.html" class="nav-link">Forum</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Actualités GTA 6</h2>
+          <p>Toutes les infos classées par thème et par date. Filtre par catégorie ci-dessous.</p>
+        </div>
+      </div>
+
+      <div class="filters" data-target="#news-list .card">
+        <button class="filter-chip active" data-filter="all">Tout</button>
+        <button class="filter-chip" data-filter="officiel">Officiel</button>
+        <button class="filter-chip" data-filter="gameplay">Gameplay</button>
+        <button class="filter-chip" data-filter="rumeur">Rumeurs</button>
+        <button class="filter-chip" data-filter="business">Business &amp; ventes</button>
+        <button class="filter-chip" data-filter="perso">Personnages</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="news-list" style="padding-top:0;">
+    <div class="container">
+      <div class="grid grid-3">
+
+        <article class="card" data-category="officiel">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-officiel">Officiel</span>
+            <h3>Exemple — communiqué de Rockstar Games</h3>
+            <p>Résumé placeholder d'une annonce officielle. À remplacer par une vraie actualité sourcée.</p>
+            <div class="card-meta"><span>Rockstar Games</span><span>01 Juil. 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="gameplay">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-gameplay">Gameplay</span>
+            <h3>Exemple — nouvelles mécaniques dévoilées</h3>
+            <p>Résumé placeholder décrivant un aperçu de gameplay ou une fonctionnalité.</p>
+            <div class="card-meta"><span>Rédaction VCN</span><span>28 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="rumeur">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-rumeur">Rumeur</span>
+            <h3>Exemple — fuite non confirmée sur la map</h3>
+            <p>Résumé placeholder à propos d'une rumeur ou fuite communautaire non confirmée.</p>
+            <div class="card-meta"><span>Source communautaire</span><span>25 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="business">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-officiel">Business</span>
+            <h3>Exemple — résultats financiers Take-Two</h3>
+            <p>Résumé placeholder concernant les ventes, précommandes ou résultats financiers liés au jeu.</p>
+            <div class="card-meta"><span>Take-Two Interactive</span><span>20 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="perso">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-gameplay">Personnages</span>
+            <h3>Exemple — portrait d'un protagoniste</h3>
+            <p>Résumé placeholder présentant un personnage principal ou secondaire.</p>
+            <div class="card-meta"><span>Rédaction VCN</span><span>15 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="rumeur">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-rumeur">Rumeur</span>
+            <h3>Exemple — spéculation sur une nouvelle bande-annonce</h3>
+            <p>Résumé placeholder d'une rumeur autour d'une prochaine communication officielle.</p>
+            <div class="card-meta"><span>Source communautaire</span><span>10 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="officiel">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-officiel">Officiel</span>
+            <h3>Exemple — mise à jour de la page officielle</h3>
+            <p>Résumé placeholder d'une mise à jour du site ou des réseaux officiels du jeu.</p>
+            <div class="card-meta"><span>Rockstar Games</span><span>05 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="gameplay">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-gameplay">Gameplay</span>
+            <h3>Exemple — configuration recommandée (spéculation)</h3>
+            <p>Résumé placeholder autour des spéculations techniques ou de configuration.</p>
+            <div class="card-meta"><span>Rédaction VCN</span><span>01 Juin 2026</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="business">
+          <div class="card-media">VISUEL À VENIR</div>
+          <div class="card-body">
+            <span class="tag tag-officiel">Business</span>
+            <h3>Exemple — partenariat annoncé</h3>
+            <p>Résumé placeholder concernant un partenariat commercial ou marketing.</p>
+            <div class="card-meta"><span>Take-Two Interactive</span><span>28 Mai 2026</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">
+          <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+          <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+        </div>
+        <p>Site communautaire indépendant dédié à l'actualité, aux guides et à la communauté de GTA 6.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="astuces.html">Astuces</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Descriptions</h4>
+        <ul>
+          <li><a href="descriptions-armes.html">Armes</a></li>
+          <li><a href="descriptions-vehicules.html">Véhicules</a></li>
+          <li><a href="descriptions-maps.html">Maps</a></li>
+          <li><a href="descriptions-items.html">Items</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="#">Discord (bientôt)</a></li>
+          <li><a href="#">X / Twitter (bientôt)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p><strong>Vice City News</strong> est un site de fans indépendant, non-officiel et non affilié à Rockstar Games, Take-Two Interactive ou toute entité liée. « Grand Theft Auto », « GTA » et « Vice City » sont des marques déposées de leurs propriétaires respectifs. Les informations publiées proviennent de sources publiques et sont fournies à titre informatif uniquement. Aucun visuel, logo ou média protégé par le droit d'auteur de Rockstar Games n'est utilisé sur ce site.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vice City News</span>
+      <span>Contenu de démonstration</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
