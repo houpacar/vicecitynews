@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidéos — Vice City News</title>
+<meta name="description" content="Vidéos communautaires GTA 6 : trailers, gameplay et lives partagés par la communauté Vice City News (liens YouTube/Twitch).">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-scene"></div>
+<div class="bg-grid"></div>
+
+<div class="demo-banner">🚧 Site de démonstration — contenu placeholder en attendant les vraies actualités GTA 6.</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+      <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+        <li><a href="guides.html" class="nav-link">Guides</a></li>
+        <li><a href="astuces.html" class="nav-link">Astuces</a></li>
+        <li class="nav-item dropdown">
+          <a href="descriptions.html" class="nav-link">Descriptions</a>
+          <div class="dropdown-menu">
+            <a href="descriptions-armes.html">Armes</a>
+            <a href="descriptions-vehicules.html">Véhicules</a>
+            <a href="descriptions-maps.html">Maps</a>
+            <a href="descriptions-items.html">Items</a>
+            <a href="descriptions-personnages.html">Personnages</a>
+            <a href="descriptions-missions.html">Missions</a>
+          </div>
+        </li>
+        <li><a href="videos.html" class="nav-link active">Vidéos</a></li>
+        <li><a href="forum.html" class="nav-link">Forum</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Vidéos communautaires</h2>
+          <p>Trailers, gameplay et lives autour de GTA 6, partagés par la communauté.</p>
+        </div>
+        <button class="btn btn-primary is-disabled" disabled title="Bientôt disponible">Proposer une vidéo</button>
+      </div>
+
+      <div class="confirmed-panel">
+        <div class="confirmed-head">
+          <h3>Comment ça marche</h3>
+        </div>
+        <ul class="confirmed-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Aucune vidéo n'est hébergée sur Vice City News : chaque carte pointe vers une vidéo publiée par son créateur sur YouTube ou Twitch.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Pas de frais d'hébergement, pas de gestion de droits d'auteur sur du contenu stocké chez nous — chacun reste propriétaire de sa vidéo.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Le live (streaming) reste sur la plateforme habituelle du créateur ; on affiche simplement le lien ici quand il est en direct.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Un hébergement vidéo natif sur le site pourra être envisagé plus tard, si l'audience du site le justifie.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="filters" data-target="#videos-list .card">
+        <button class="filter-chip active" data-filter="all">Toutes</button>
+        <button class="filter-chip" data-filter="youtube">YouTube</button>
+        <button class="filter-chip" data-filter="twitch">Twitch</button>
+        <button class="filter-chip" data-filter="live">En direct</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos-list" style="padding-top:0;">
+    <div class="container">
+      <div class="grid grid-3">
+
+        <a href="#" class="card video-card" data-category="youtube">
+          <div class="card-media">
+            MINIATURE À VENIR
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="tag tag-youtube">YouTube</span>
+            <h3>Exemple — analyse d'une bande-annonce</h3>
+            <p>Résumé placeholder d'une vidéo communautaire partagée par un créateur.</p>
+            <div class="creator"><span class="avatar">CR</span> Créateur exemple</div>
+          </div>
+        </a>
+
+        <a href="#" class="card video-card" data-category="twitch">
+          <div class="card-media">
+            MINIATURE À VENIR
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="tag tag-twitch">Twitch</span>
+            <h3>Exemple — session de préparation communautaire</h3>
+            <p>Résumé placeholder d'un extrait ou d'un replay de stream.</p>
+            <div class="creator"><span class="avatar">ST</span> Streamer exemple</div>
+          </div>
+        </a>
+
+        <a href="#" class="card video-card" data-category="youtube live">
+          <div class="card-media">
+            MINIATURE À VENIR
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="tag tag-rumeur">En direct (exemple)</span>
+            <h3>Exemple — émission communautaire en direct</h3>
+            <p>Résumé placeholder d'un live en cours partagé par la communauté.</p>
+            <div class="creator"><span class="avatar">LV</span> Créateur exemple</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">
+          <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+          <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+        </div>
+        <p>Site communautaire indépendant dédié à l'actualité, aux guides et à la communauté de GTA 6.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="astuces.html">Astuces</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Descriptions</h4>
+        <ul>
+          <li><a href="descriptions-armes.html">Armes</a></li>
+          <li><a href="descriptions-vehicules.html">Véhicules</a></li>
+          <li><a href="descriptions-maps.html">Maps</a></li>
+          <li><a href="descriptions-items.html">Items</a></li>
+          <li><a href="descriptions-personnages.html">Personnages</a></li>
+          <li><a href="descriptions-missions.html">Missions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="#">Discord (bientôt)</a></li>
+          <li><a href="#">X / Twitter (bientôt)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p><strong>Vice City News</strong> est un site de fans indépendant, non-officiel et non affilié à Rockstar Games, Take-Two Interactive ou toute entité liée. « Grand Theft Auto », « GTA » et « Vice City » sont des marques déposées de leurs propriétaires respectifs. Les informations publiées proviennent de sources publiques et sont fournies à titre informatif uniquement. Aucun visuel, logo ou média protégé par le droit d'auteur de Rockstar Games n'est utilisé sur ce site. Les vidéos affichées restent hébergées et détenues par leurs créateurs respectifs sur leurs plateformes d'origine.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vice City News</span>
+      <span>Contenu de démonstration</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

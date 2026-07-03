@@ -377,6 +377,22 @@ section { padding: 96px 0; }
 .tag-rumeur { background: rgba(255,209,102,0.15); color: var(--yellow); }
 .tag-officiel { background: rgba(0,229,255,0.15); color: var(--cyan); }
 .tag-gameplay { background: rgba(123,47,247,0.2); color: #c9a4ff; }
+.tag-youtube { background: rgba(255,122,48,0.15); color: var(--orange); }
+.tag-twitch { background: rgba(123,47,247,0.2); color: #c9a4ff; }
+
+/* ---------- Vidéos (liens communautaires) ---------- */
+.video-card .card-media { position: relative; }
+.video-card .play-badge {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.video-card .play-badge svg {
+  width: 44px; height: 44px; color: rgba(245,240,255,0.7);
+}
+.video-card .creator {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 14px; font-size: 13px; color: var(--text-dim);
+}
 
 .card h3 { font-size: 18px; text-transform: none; letter-spacing: 0; margin-bottom: 8px; }
 .card p { color: var(--text-muted); font-size: 14.5px; }

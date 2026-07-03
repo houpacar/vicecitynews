@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Descriptions — Vice City News</title>
-<meta name="description" content="Toutes les fiches descriptives GTA 6 : armes, véhicules, maps et items.">
+<title>Missions — Descriptions — Vice City News</title>
+<meta name="description" content="Fiches descriptives des missions de GTA 6 : missions principales, braquages et missions annexes.">
 <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -51,59 +51,59 @@
 </header>
 
 <main>
-  <section>
+  <section style="padding-bottom:0;">
     <div class="container">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;"><a href="descriptions.html" style="color:var(--cyan);">Descriptions</a> / Missions</p>
       <div class="section-head">
         <div>
-          <h2>Descriptions &amp; encyclopédie</h2>
-          <p>Toutes les fiches détaillées sur l'univers de GTA 6, classées par catégorie.</p>
+          <h2>Missions</h2>
+          <p>Missions principales, braquages et missions annexes de GTA 6 (contenu disponible dès la sortie du jeu).</p>
         </div>
       </div>
-
-      <div class="grid grid-4">
-        <a href="descriptions-armes.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M3 21l7-7M14 4l6 6-9.5 9.5-6-6L14 4z"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Armes</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-vehicules.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M3 13l2-6h14l2 6v5H3z"/><circle cx="7.5" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Véhicules</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-maps.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Maps</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-items.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Items</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-personnages.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Personnages</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-missions.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Missions</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
+      <div class="filters" data-target="#missions-list .card">
+        <button class="filter-chip active" data-filter="all">Toutes</button>
+        <button class="filter-chip" data-filter="principale">Missions principales</button>
+        <button class="filter-chip" data-filter="braquage">Braquages</button>
+        <button class="filter-chip" data-filter="annexe">Missions annexes</button>
       </div>
+    </div>
+  </section>
+
+  <section id="missions-list" style="padding-top:0;">
+    <div class="container">
+      <div class="grid grid-4 ghost-grid">
+        <div class="card item-card" data-category="principale">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Mission d'introduction — exemple</h3>
+          <p class="category">Mission principale · à venir</p>
+        </div>
+        <div class="card item-card" data-category="principale">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Mission clé de l'histoire — exemple</h3>
+          <p class="category">Mission principale · à venir</p>
+        </div>
+        <div class="card item-card" data-category="braquage">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+          <h3>Braquage de banque — exemple</h3>
+          <p class="category">Braquage · à venir</p>
+        </div>
+        <div class="card item-card" data-category="braquage">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+          <h3>Casse de bijouterie — exemple</h3>
+          <p class="category">Braquage · à venir</p>
+        </div>
+        <div class="card item-card" data-category="annexe">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></div>
+          <h3>Course illégale — exemple</h3>
+          <p class="category">Mission annexe · à venir</p>
+        </div>
+        <div class="card item-card" data-category="annexe">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></div>
+          <h3>Contrat pour un fixeur — exemple</h3>
+          <p class="category">Mission annexe · à venir</p>
+        </div>
+      </div>
+      <p style="color:var(--text-dim); font-size:13px; margin-top:32px;">Fiches détaillées disponibles au lancement du jeu — voir aussi l'onglet <a href="guides.html" style="color:var(--cyan);">Guides</a>.</p>
     </div>
   </section>
 </main>

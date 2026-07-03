@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Descriptions — Vice City News</title>
-<meta name="description" content="Toutes les fiches descriptives GTA 6 : armes, véhicules, maps et items.">
+<title>Personnages — Descriptions — Vice City News</title>
+<meta name="description" content="Fiches descriptives des personnages de GTA 6 : protagonistes, personnages secondaires, antagonistes et faune.">
 <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -51,58 +51,68 @@
 </header>
 
 <main>
-  <section>
+  <section style="padding-bottom:0;">
     <div class="container">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;"><a href="descriptions.html" style="color:var(--cyan);">Descriptions</a> / Personnages</p>
       <div class="section-head">
         <div>
-          <h2>Descriptions &amp; encyclopédie</h2>
-          <p>Toutes les fiches détaillées sur l'univers de GTA 6, classées par catégorie.</p>
+          <h2>Personnages</h2>
+          <p>Protagonistes, personnages secondaires, antagonistes et faune de l'univers de GTA 6.</p>
         </div>
       </div>
+      <div class="filters" data-target="#persos-list .card">
+        <button class="filter-chip active" data-filter="all">Tous</button>
+        <button class="filter-chip" data-filter="protagoniste">Protagonistes</button>
+        <button class="filter-chip" data-filter="secondaire">Secondaires</button>
+        <button class="filter-chip" data-filter="antagoniste">Antagonistes</button>
+        <button class="filter-chip" data-filter="faune">Faune &amp; animaux</button>
+      </div>
+    </div>
+  </section>
 
+  <section id="persos-list" style="padding-top:0;">
+    <div class="container">
       <div class="grid grid-4">
-        <a href="descriptions-armes.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M3 21l7-7M14 4l6 6-9.5 9.5-6-6L14 4z"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Armes</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-vehicules.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M3 13l2-6h14l2 6v5H3z"/><circle cx="7.5" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Véhicules</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-maps.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Maps</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-items.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Items</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-personnages.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Personnages</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
-        <a href="descriptions-missions.html" class="card item-card" style="padding:36px 20px;">
-          <div class="icon-wrap" style="width:72px;height:72px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:34px;height:34px;"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-          </div>
-          <h3 style="font-size:17px;">Missions</h3>
-          <p class="category">Fiches à venir</p>
-        </a>
+        <div class="card item-card" data-category="protagoniste">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
+          <h3>Protagoniste principal — exemple</h3>
+          <p class="category">Protagoniste · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="protagoniste">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
+          <h3>Duo protagoniste — exemple</h3>
+          <p class="category">Protagoniste · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="secondaire">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.6"/><path d="M2 21c0-3.6 3-6.5 7-6.5s7 2.9 7 6.5"/></svg></div>
+          <h3>Allié / complice — exemple</h3>
+          <p class="category">Secondaire · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="secondaire">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.6"/><path d="M2 21c0-3.6 3-6.5 7-6.5s7 2.9 7 6.5"/></svg></div>
+          <h3>Contact / fixeur — exemple</h3>
+          <p class="category">Secondaire · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="antagoniste">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div>
+          <h3>Chef de gang rival — exemple</h3>
+          <p class="category">Antagoniste · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="antagoniste">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div>
+          <h3>Figure du pouvoir local — exemple</h3>
+          <p class="category">Antagoniste · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="faune">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10c0-3 2-5 4-5s3 1.5 4 1.5S14 5 16 5s4 2 4 5c0 5-4 9-8 9s-8-4-8-9z"/></svg></div>
+          <h3>Alligator — exemple</h3>
+          <p class="category">Faune · fiche à venir</p>
+        </div>
+        <div class="card item-card" data-category="faune">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10c0-3 2-5 4-5s3 1.5 4 1.5S14 5 16 5s4 2 4 5c0 5-4 9-8 9s-8-4-8-9z"/></svg></div>
+          <h3>Chien de compagnie — exemple</h3>
+          <p class="category">Faune · fiche à venir</p>
+        </div>
       </div>
     </div>
   </section>
