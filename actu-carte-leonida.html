@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maps — Descriptions — Vice City News</title>
-<meta name="description" content="Fiches descriptives des lieux et régions de la carte de GTA 6.">
+<title>La carte se situe dans l'État de Leonida — Vice City News</title>
+<meta name="description" content="GTA 6 se déroule dans l'État fictif de Leonida, avec Vice City et 5 autres régions officiellement nommées par Rockstar Games.">
 <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <div class="bg-scene"></div>
 <div class="bg-grid"></div>
 
-<div class="demo-banner">🚧 Site de démonstration — contenu placeholder en attendant les vraies actualités GTA 6.</div>
+<div class="demo-banner">🚧 Site de démonstration — contenu vérifié, mais site en construction.</div>
 
 <header class="site-header">
   <div class="container">
@@ -26,11 +26,11 @@
     <nav class="main-nav">
       <ul>
         <li><a href="index.html" class="nav-link">Accueil</a></li>
-        <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+        <li><a href="actualites.html" class="nav-link active">Actualités</a></li>
         <li><a href="guides.html" class="nav-link">Guides</a></li>
         <li><a href="astuces.html" class="nav-link">Astuces</a></li>
-        <li class="nav-item dropdown open">
-          <a href="descriptions.html" class="nav-link active">Descriptions</a>
+        <li class="nav-item dropdown">
+          <a href="descriptions.html" class="nav-link">Descriptions</a>
           <div class="dropdown-menu">
             <a href="descriptions-armes.html">Armes</a>
             <a href="descriptions-vehicules.html">Véhicules</a>
@@ -53,55 +53,29 @@
 <main>
   <section style="padding-bottom:0;">
     <div class="container">
-      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;"><a href="descriptions.html" style="color:var(--cyan);">Descriptions</a> / Maps</p>
-      <div class="section-head">
-        <div>
-          <h2>Maps &amp; lieux</h2>
-          <p>GTA 6 se déroule dans l'État fictif de Leonida. Rockstar Games a officiellement nommé 6 régions ; les fiches détaillées de chacune arriveront progressivement.</p>
-        </div>
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;"><a href="actualites.html" style="color:var(--cyan);">← Retour aux actualités</a></p>
+
+      <div class="detail-hero">
+        <div class="card-media">VISUEL À VENIR</div>
       </div>
-      <div class="filters" data-target="#maps-list .card">
-        <button class="filter-chip active" data-filter="all">Tous</button>
-        <button class="filter-chip" data-filter="ville">Zones urbaines</button>
-        <button class="filter-chip" data-filter="nature">Zones rurales</button>
-        <button class="filter-chip" data-filter="interet">Points d'intérêt</button>
+
+      <div class="detail-head">
+        <span class="tag tag-gameplay">Gameplay</span>
+        <h1>La carte se situe dans l'État de Leonida</h1>
+        <div class="card-meta" style="margin-top:10px; max-width:760px;"><span>Rockstar Games</span><span>2026</span></div>
       </div>
     </div>
   </section>
 
-  <section id="maps-list" style="padding-top:0;">
+  <section>
     <div class="container">
-      <div class="grid grid-4">
-        <a href="map-vice-city.html" class="card item-card" data-category="ville">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l4-3 4 3 4-3 4 3v12"/><path d="M9 21v-6h4v6"/></svg></div>
-          <h3>Vice City</h3>
-          <p class="category">Zone urbaine</p>
-        </a>
-        <a href="map-port-gellhorn.html" class="card item-card" data-category="ville">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l4-3 4 3 4-3 4 3v12"/><path d="M9 21v-6h4v6"/></svg></div>
-          <h3>Port Gellhorn</h3>
-          <p class="category">Zone urbaine</p>
-        </a>
-        <a href="map-ambrosia.html" class="card item-card" data-category="interet">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-          <h3>Ambrosia</h3>
-          <p class="category">Région confirmée</p>
-        </a>
-        <a href="map-grassrivers.html" class="card item-card" data-category="nature">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l4 8H8z"/><path d="M12 9l5 10H7z"/></svg></div>
-          <h3>Grassrivers</h3>
-          <p class="category">Zone rurale</p>
-        </a>
-        <a href="map-mount-kalaga.html" class="card item-card" data-category="nature">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l4 8H8z"/><path d="M12 9l5 10H7z"/></svg></div>
-          <h3>Mount Kalaga</h3>
-          <p class="category">Zone rurale</p>
-        </a>
-        <a href="map-leonida-keys.html" class="card item-card" data-category="nature">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l4 8H8z"/><path d="M12 9l5 10H7z"/></svg></div>
-          <h3>Leonida Keys</h3>
-          <p class="category">Zone rurale</p>
-        </a>
+      <div class="detail-body">
+        <p>Rockstar Games a confirmé que Grand Theft Auto VI se déroule dans l'État fictif de <strong>Leonida</strong>, décrit dans le communiqué officiel comme abritant « les rues baignées de néons de Vice City ».</p>
+        <p>Six régions ont été officiellement nommées : <strong>Vice City</strong>, les <strong>Leonida Keys</strong>, <strong>Grassrivers</strong>, <strong>Mount Kalaga</strong>, <strong>Port Gellhorn</strong> et <strong>Ambrosia</strong>. Chacune fait l'objet d'une fiche dédiée dans la section <a href="descriptions-maps.html" style="color:var(--cyan);">Maps</a>.</p>
+        <p>D'après les estimations relayées par la presse spécialisée, la carte serait 1,5 à 2 fois plus grande que celle de GTA V — Rockstar n'a toutefois communiqué aucun chiffre officiel à ce sujet.</p>
+      </div>
+      <div class="detail-source">
+        Sources : <a href="https://www.gtabase.com/gta-6/map/" target="_blank" rel="noopener">GTAbase</a>, <a href="https://pcgamecheck.com/blog/gta-6-map-setting-characters-confirmed-2026" target="_blank" rel="noopener">PC Game Check</a>
       </div>
     </div>
   </section>

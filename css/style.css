@@ -548,6 +548,43 @@ section { padding: 96px 0; }
 .item-card h3 { font-size: 15px; }
 .item-card .category { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
 
+/* ---------- Pages de détail (article / fiche) ---------- */
+.detail-hero { max-width: 900px; margin: 0 auto 36px; }
+.detail-hero .card-media { aspect-ratio: 21/9; border-radius: var(--radius); }
+.detail-head { max-width: 760px; margin: 0 auto 8px; }
+.detail-head h1 {
+  font-size: clamp(26px, 4vw, 38px);
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-top: 14px;
+}
+.detail-body {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--text-muted);
+  font-size: 16.5px;
+  line-height: 1.85;
+}
+.detail-body p { margin-bottom: 20px; }
+.detail-body p:last-child { margin-bottom: 0; }
+.detail-source {
+  max-width: 760px;
+  margin: 32px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.detail-source a { color: var(--cyan); }
+.detail-pending {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--text-dim);
+  font-size: 14.5px;
+  font-style: italic;
+}
+
 /* ---------- Newsletter ---------- */
 .newsletter {
   background: linear-gradient(120deg, rgba(255,47,208,0.12), rgba(0,229,255,0.08));
