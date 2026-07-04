@@ -14,31 +14,48 @@ Aucune installation n'est nécessaire (pas de Node.js requis).
 
 ```
 vicecitynews/
-├── index.html                  Page d'accueil
-├── actualites.html              Actualités (filtrables par catégorie)
-├── guides.html                  Guides (verrouillés jusqu'à la sortie du jeu)
-├── astuces.html                 Astuces & préparation
-├── descriptions.html            Page "hub" descriptions
+├── index.html                   Page d'accueil
+├── actualites.html               Actualités (filtrables, + résumé "ce qu'on sait")
+├── actu-*.html                   Une page par actualité vérifiée (cliquable depuis les cartes)
+├── guides.html                   Guides (verrouillés jusqu'à la sortie du jeu)
+├── astuces.html                  Astuces & préparation
+├── descriptions.html             Page "hub" descriptions
 ├── descriptions-armes.html
 ├── descriptions-vehicules.html
 ├── descriptions-maps.html
 ├── descriptions-items.html
-├── forum.html                   Maquette visuelle du forum (pas encore fonctionnel)
-├── css/style.css                Toute la charte graphique (couleurs, thème néon)
-├── js/main.js                   Menu mobile, filtres, compte à rebours
-└── assets/img/logo-mark.svg     Logo original (SVG, aucun copyright Rockstar)
+├── descriptions-personnages.html
+├── descriptions-missions.html
+├── perso-*.html                  Fiches Jason Duval / Lucia Caminos
+├── map-*.html                    Fiches des 6 régions officielles de Leonida
+├── videos.html                   Vidéos communautaires (liens YouTube/Twitch)
+├── forum.html                    Maquette visuelle du forum (pas encore fonctionnel)
+├── 404.html                      Page d'erreur personnalisée
+├── rss.xml                       Flux RSS des actualités
+├── css/style.css                 Toute la charte graphique (couleurs, thème néon)
+├── js/main.js                    Menu mobile, filtres, compte à rebours
+├── research/                     Recherches brutes archivées (pas publiées, pas liées depuis le site)
+└── assets/img/logo-mark.svg      Logo original (SVG, aucun copyright Rockstar)
 ```
 
 ## État actuel du contenu
 
-Tout le contenu (articles, armes, véhicules...) est actuellement du **placeholder** ("exemple"), pour valider le design et la structure avant de le remplir avec de vraies informations.
+Les infos suivantes sont **vérifiées et sourcées** (recoupement de plusieurs sources fiables) : date de sortie (19 nov. 2026), plateformes, précommandes/prix, carte (État de Leonida + régions), protagonistes (Jason Duval, Lucia Caminos), plusieurs personnages secondaires, une quinzaine de véhicules nommés, les grandes lignes du système d'armes/objets.
+
+Ce qui reste en **placeholder** ("exemple") faute de source fiable à ce jour : missions détaillées, armes de corps à corps précises, tenues nommées, faune spécifique. Rien n'est inventé — ces fiches restent volontairement vides plutôt que de présenter une supposition comme un fait.
+
+## À faire avant une mise en ligne publique
+
+- Les balises `og:image`, `og:url` (dans le `<head>` de chaque page) et les liens du fichier `rss.xml` utilisent le domaine provisoire `vicecitynews.example` — à remplacer par le vrai nom de domaine une fois le site déployé (recherche/remplacement global).
+- `404.html` est reconnu automatiquement par GitHub Pages et Netlify comme page d'erreur ; sur un autre hébergeur, il faudra peut-être le configurer manuellement.
 
 ## Prochaines étapes possibles
 
-1. **Remplir le contenu réel** : je peux faire des recherches web pour toi et rédiger de vrais articles/fiches classés par thème et par date — il suffit de me le demander.
-2. **Rendre le forum fonctionnel** : nécessite un vrai backend (comptes, base de données). C'est un projet à part, que l'on pourra aborder avec Next.js + une base de données une fois le design validé.
-3. **Automatiser la veille d'actualités** : possible via une "tâche planifiée" Claude qui relance une recherche à intervalle régulier — demande-le-moi quand tu seras prêt.
-4. **Mettre le site en ligne gratuitement** : par exemple avec GitHub Pages ou Netlify (glisser-déposer le dossier). Je peux te guider pas à pas le moment venu.
+1. **Continuer à enrichir le contenu** : recherches ciblées supplémentaires (missions, tenues, corps-à-corps) au fur et à mesure des annonces officielles.
+2. **Visuels** : remplacer les blocs "VISUEL À VENIR" par de vraies images une fois fournies (voir dossier `assets/img/`).
+3. **Rendre le forum fonctionnel** : nécessite un vrai backend (comptes, base de données). Projet à part, à aborder avec Next.js + une base de données une fois le design validé.
+4. **Automatiser la veille d'actualités** : possible via une "tâche planifiée" Claude qui relance une recherche à intervalle régulier — demande-le-moi quand tu seras prêt (utile avec la bande-annonce 3 attendue mi-juillet 2026).
+5. **Mettre le site en ligne gratuitement** : par exemple avec GitHub Pages ou Netlify (glisser-déposer le dossier). Je peux te guider pas à pas le moment venu.
 
 ## Petit lexique Git pour débuter
 

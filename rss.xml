@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Vice City News — Actualités GTA 6</title>
+<link>https://vicecitynews.example/actualites.html</link>
+<description>Toute l'actualité vérifiée de GTA 6, classée par thème et par date.</description>
+<language>fr-fr</language>
+
+<item>
+<title>Précommandes ouvertes : 79,99 $ / 99,99 $</title>
+<link>https://vicecitynews.example/actu-precommandes.html</link>
+<guid>https://vicecitynews.example/actu-precommandes.html</guid>
+<pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+<description>Les précommandes de GTA 6 ont ouvert le 25 juin 2026 : édition Standard à 79,99 $, édition Ultimate à 99,99 $.</description>
+</item>
+
+<item>
+<title>GTA 6 fixé au 19 novembre 2026</title>
+<link>https://vicecitynews.example/actu-date-sortie.html</link>
+<guid>https://vicecitynews.example/actu-date-sortie.html</guid>
+<pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+<description>Rockstar Games a confirmé que Grand Theft Auto VI sortira le jeudi 19 novembre 2026, après un deuxième report.</description>
+</item>
+
+<item>
+<title>Sortie confirmée sur PS5 et Xbox Series X|S</title>
+<link>https://vicecitynews.example/actu-plateformes.html</link>
+<guid>https://vicecitynews.example/actu-plateformes.html</guid>
+<pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+<description>Aucune date n'a été annoncée pour une version PC.</description>
+</item>
+
+<item>
+<title>La carte se situe dans l'État de Leonida</title>
+<link>https://vicecitynews.example/actu-carte-leonida.html</link>
+<guid>https://vicecitynews.example/actu-carte-leonida.html</guid>
+<pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+<description>Rockstar a nommé officiellement six régions : Vice City, Leonida Keys, Grassrivers, Mount Kalaga, Port Gellhorn et Ambrosia.</description>
+</item>
+
+<item>
+<title>Jason et Lucia, les deux protagonistes jouables</title>
+<link>https://vicecitynews.example/actu-protagonistes.html</link>
+<guid>https://vicecitynews.example/actu-protagonistes.html</guid>
+<pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+<description>Lucia Caminos devient la première protagoniste principale féminine d'un GTA numéroté, aux côtés de Jason Duval.</description>
+</item>
+
+</channel>
+</rss>
