@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vidéos — Vice City News</title>
-<meta name="description" content="Vidéos communautaires GTA 6 : trailers, gameplay et lives partagés par la communauté Vice City News (liens YouTube/Twitch).">
+<meta name="description" content="Vidéos communautaires GTA 6 classées par catégorie (stream, gameplay, astuces, analyses, humour), proposées par les créateurs via liens YouTube/Twitch.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vice City News">
 <meta property="og:title" content="Vidéos — Vice City News">
-<meta property="og:description" content="Vidéos communautaires GTA 6 : trailers, gameplay et lives partagés par la communauté Vice City News (liens YouTube/Twitch).">
+<meta property="og:description" content="Vidéos communautaires GTA 6 classées par catégorie (stream, gameplay, astuces, analyses, humour), proposées par les créateurs via liens YouTube/Twitch.">
 <meta property="og:image" content="/assets/img/logo-mark.svg">
 <meta property="og:url" content="/videos.html">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vidéos — Vice City News">
-<meta name="twitter:description" content="Vidéos communautaires GTA 6 : trailers, gameplay et lives partagés par la communauté Vice City News (liens YouTube/Twitch).">
+<meta name="twitter:description" content="Vidéos communautaires GTA 6 classées par catégorie (stream, gameplay, astuces, analyses, humour), proposées par les créateurs via liens YouTube/Twitch.">
 
 <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,9 +68,9 @@
       <div class="section-head">
         <div>
           <h2>Vidéos communautaires</h2>
-          <p>Trailers, gameplay et lives autour de GTA 6, partagés par la communauté.</p>
+          <p>Streams, astuces, analyses, gameplay et humour autour de GTA 6, partagés par la communauté.</p>
         </div>
-        <button class="btn btn-primary is-disabled" disabled title="Bientôt disponible">Proposer une vidéo</button>
+        <a href="#proposer-video" class="btn btn-primary">Proposer une vidéo</a>
       </div>
 
       <div class="confirmed-panel">
@@ -94,14 +94,20 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
             <span>Un hébergement vidéo natif sur le site pourra être envisagé plus tard, si l'audience du site le justifie.</span>
           </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Les créateurs choisissent eux-mêmes la catégorie de leur vidéo au moment de la proposer, via le formulaire en bas de page.</span>
+          </li>
         </ul>
       </div>
 
       <div class="filters" data-target="#videos-list .card">
         <button class="filter-chip active" data-filter="all">Toutes</button>
-        <button class="filter-chip" data-filter="youtube">YouTube</button>
-        <button class="filter-chip" data-filter="twitch">Twitch</button>
-        <button class="filter-chip" data-filter="live">En direct</button>
+        <button class="filter-chip" data-filter="stream">Stream</button>
+        <button class="filter-chip" data-filter="gameplay">Gameplay</button>
+        <button class="filter-chip" data-filter="astuces">Astuces &amp; guides</button>
+        <button class="filter-chip" data-filter="analyses">Analyses &amp; trailers</button>
+        <button class="filter-chip" data-filter="humour">Humour</button>
       </div>
     </div>
   </section>
@@ -110,7 +116,7 @@
     <div class="container">
       <div class="grid grid-3">
 
-        <a href="#" class="card video-card" data-category="youtube">
+        <a href="#" class="card video-card" data-category="analyses">
           <div class="card-media">
             MINIATURE À VENIR
             <div class="play-badge">
@@ -118,14 +124,14 @@
             </div>
           </div>
           <div class="card-body">
-            <span class="tag tag-youtube">YouTube</span>
-            <h3>Exemple — analyse d'une bande-annonce</h3>
-            <p>Résumé placeholder d'une vidéo communautaire partagée par un créateur.</p>
+            <span class="tag tag-youtube">YouTube · Analyses &amp; trailers</span>
+            <h3>Exemple — décryptage de l'Extended Look</h3>
+            <p>Résumé placeholder d'une vidéo communautaire analysant la présentation du 27 août 2026.</p>
             <div class="creator"><span class="avatar">CR</span> Créateur exemple</div>
           </div>
         </a>
 
-        <a href="#" class="card video-card" data-category="twitch">
+        <a href="#" class="card video-card" data-category="stream">
           <div class="card-media">
             MINIATURE À VENIR
             <div class="play-badge">
@@ -133,14 +139,14 @@
             </div>
           </div>
           <div class="card-body">
-            <span class="tag tag-twitch">Twitch</span>
-            <h3>Exemple — session de préparation communautaire</h3>
-            <p>Résumé placeholder d'un extrait ou d'un replay de stream.</p>
+            <span class="tag tag-twitch">Twitch · Stream</span>
+            <h3>Exemple — session de préparation en direct</h3>
+            <p>Résumé placeholder d'un extrait ou d'un replay de stream communautaire.</p>
             <div class="creator"><span class="avatar">ST</span> Streamer exemple</div>
           </div>
         </a>
 
-        <a href="#" class="card video-card" data-category="youtube live">
+        <a href="#" class="card video-card" data-category="astuces">
           <div class="card-media">
             MINIATURE À VENIR
             <div class="play-badge">
@@ -148,13 +154,92 @@
             </div>
           </div>
           <div class="card-body">
-            <span class="tag tag-rumeur">En direct (exemple)</span>
-            <h3>Exemple — émission communautaire en direct</h3>
-            <p>Résumé placeholder d'un live en cours partagé par la communauté.</p>
-            <div class="creator"><span class="avatar">LV</span> Créateur exemple</div>
+            <span class="tag tag-youtube">YouTube · Astuces &amp; guides</span>
+            <h3>Exemple — bien préparer sa sortie de GTA 6</h3>
+            <p>Résumé placeholder d'un guide pratique partagé par un créateur.</p>
+            <div class="creator"><span class="avatar">GD</span> Créateur exemple</div>
           </div>
         </a>
 
+        <a href="#" class="card video-card" data-category="gameplay">
+          <div class="card-media">
+            MINIATURE À VENIR
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="tag tag-youtube">YouTube · Gameplay</span>
+            <h3>Exemple — extrait de gameplay commenté</h3>
+            <p>Résumé placeholder d'un extrait de gameplay ou d'une théorie partagée par la communauté.</p>
+            <div class="creator"><span class="avatar">GP</span> Créateur exemple</div>
+          </div>
+        </a>
+
+        <a href="#" class="card video-card" data-category="humour">
+          <div class="card-media">
+            MINIATURE À VENIR
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="tag tag-youtube">YouTube · Humour</span>
+            <h3>Exemple — montage humoristique communautaire</h3>
+            <p>Résumé placeholder d'un montage ou d'un sketch autour de GTA 6.</p>
+            <div class="creator"><span class="avatar">HM</span> Créateur exemple</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="proposer-video">
+    <div class="container">
+      <div class="confirmed-panel">
+        <div class="confirmed-head">
+          <h3>Proposer votre vidéo</h3>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:4px;">Vous êtes créateur de contenu GTA 6 ? Choisissez vous-même la catégorie qui correspond le mieux à votre vidéo et envoyez-nous le lien : nous l'ajouterons manuellement à la liste ci-dessus.</p>
+
+        <form id="video-submit-form" class="video-submit-form">
+          <div>
+            <label for="creator-name">Votre nom / nom de la chaîne *</label>
+            <input type="text" id="creator-name" name="creator-name" placeholder="Ex. VCN_Streamer" required>
+          </div>
+          <div>
+            <label for="video-category">Catégorie *</label>
+            <select id="video-category" name="video-category" required>
+              <option value="">Choisir une catégorie…</option>
+              <option value="stream">Stream</option>
+              <option value="gameplay">Gameplay</option>
+              <option value="astuces">Astuces &amp; guides</option>
+              <option value="analyses">Analyses &amp; trailers</option>
+              <option value="humour">Humour</option>
+            </select>
+          </div>
+          <div>
+            <label for="video-platform">Plateforme</label>
+            <select id="video-platform" name="video-platform">
+              <option value="YouTube">YouTube</option>
+              <option value="Twitch">Twitch</option>
+            </select>
+          </div>
+          <div>
+            <label for="video-link">Lien de la vidéo / de la chaîne *</label>
+            <input type="url" id="video-link" name="video-link" placeholder="https://" required>
+          </div>
+          <div class="field-full">
+            <label for="video-message">Message (optionnel)</label>
+            <textarea id="video-message" name="video-message" placeholder="Un mot sur votre vidéo, votre chaîne…"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Envoyer par e-mail</button>
+            <span class="video-submit-note">Ouvre votre client mail avec un message pré-rempli — aucune donnée n'est envoyée à un serveur.</span>
+          </div>
+          <p id="video-submit-status" class="form-status field-full"></p>
+        </form>
       </div>
     </div>
   </section>

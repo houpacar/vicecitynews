@@ -47,6 +47,7 @@ Ce qui reste en **placeholder** ("exemple") faute de source fiable à ce jour : 
 ## À faire avant une mise en ligne publique
 
 - Les balises `og:image`, `og:url` (dans le `<head>` de chaque page) et les liens du fichier `rss.xml` utilisent le domaine provisoire `vicecitynews.example` — à remplacer par le vrai nom de domaine une fois le site déployé (recherche/remplacement global).
+- Le formulaire "Proposer une vidéo" (page `videos.html`) envoie vers l'adresse placeholder `contact@vicecitynews.example` (voir `initVideoSubmitForm()` dans `js/main.js`) — à remplacer par une vraie adresse de contact avant la mise en ligne.
 - `404.html` est reconnu automatiquement par GitHub Pages et Netlify comme page d'erreur ; sur un autre hébergeur, il faudra peut-être le configurer manuellement.
 
 ## Prochaines étapes possibles
@@ -54,7 +55,7 @@ Ce qui reste en **placeholder** ("exemple") faute de source fiable à ce jour : 
 1. **Continuer à enrichir le contenu** : recherches ciblées supplémentaires (missions, tenues, corps-à-corps) au fur et à mesure des annonces officielles.
 2. **Visuels** : remplacer les blocs "VISUEL À VENIR" par de vraies images une fois fournies (voir dossier `assets/img/`).
 3. **Rendre le forum fonctionnel** : nécessite un vrai backend (comptes, base de données). Projet à part, à aborder avec Next.js + une base de données une fois le design validé.
-4. **Automatiser la veille d'actualités** : possible via une "tâche planifiée" Claude qui relance une recherche à intervalle régulier — demande-le-moi quand tu seras prêt (utile avec la bande-annonce 3 attendue mi-juillet 2026).
+4. **Veille d'actualités automatisée** : une tâche planifiée Claude (`veille-gta6-news`) tourne déjà tous les 3 jours et signale les nouveautés à intégrer manuellement. L'« Extended Look » (26 min de gameplay, 27 août 2026) a depuis été diffusé et intégré au site.
 5. **Mettre le site en ligne gratuitement** : par exemple avec GitHub Pages ou Netlify (glisser-déposer le dossier). Je peux te guider pas à pas le moment venu.
 
 ## Petit lexique Git pour débuter

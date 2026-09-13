@@ -665,6 +665,60 @@ section { padding: 96px 0; }
 }
 .newsletter-form input::placeholder { color: var(--text-dim); }
 
+/* ---------- Formulaire "Proposer une vidéo" ---------- */
+.video-submit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+  margin-top: 22px;
+}
+.video-submit-form .field-full { grid-column: 1 / -1; }
+.video-submit-form label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.video-submit-form input,
+.video-submit-form select,
+.video-submit-form textarea {
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius);
+  padding: 11px 14px;
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+.video-submit-form input::placeholder,
+.video-submit-form textarea::placeholder { color: var(--text-dim); }
+.video-submit-form select { appearance: none; cursor: pointer; }
+.video-submit-form input:focus,
+.video-submit-form select:focus,
+.video-submit-form textarea:focus {
+  outline: none;
+  border-color: var(--cyan);
+}
+.video-submit-form textarea { resize: vertical; min-height: 90px; }
+.video-submit-form .form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.video-submit-note {
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+.form-status {
+  font-size: 13.5px;
+  color: var(--cyan);
+  display: none;
+}
+.form-status.visible { display: block; }
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border-glow);
@@ -733,4 +787,5 @@ section { padding: 96px 0; }
   .newsletter { flex-direction: column; text-align: center; }
   .forum-category { flex-wrap: wrap; }
   .forum-latest { border-left: none; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; width: 100%; }
+  .video-submit-form { grid-template-columns: 1fr; }
 }

@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initDropdowns();
   initFilters();
   initCountdown();
+  initVideoSubmitForm();
 });
 
 /* ---- Menu mobile ---- */
@@ -89,4 +90,53 @@ function initCountdown() {
 
   tick();
   const timer = setInterval(tick, 1000);
+}
+
+/* ---- Formulaire "Proposer une vidéo" (page Vidéos) ----
+   Pas de backend sur ce site statique : le formulaire compose
+   un e-mail (mailto:) pré-rempli avec la catégorie choisie par
+   le créateur, plutôt que d'envoyer les données quelque part. */
+function initVideoSubmitForm() {
+  const form = document.getElementById("video-submit-form");
+  if (!form) return;
+
+  const status = document.getElementById("video-submit-status");
+  const CONTACT_EMAIL = "contact@vicecitynews.example"; // à remplacer par une vraie adresse avant mise en ligne
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = form.elements["creator-name"].value.trim();
+    const category = form.elements["video-category"];
+    const categoryLabel = category.options[category.selectedIndex]?.text || "";
+    const platform = form.elements["video-platform"].value;
+    const link = form.elements["video-link"].value.trim();
+    const message = form.elements["video-message"].value.trim();
+
+    if (!name || !category.value || !link) {
+      if (status) {
+        status.textContent = "Merci de renseigner au moins votre nom, une catégorie et le lien de la vidéo.";
+        status.classList.add("visible");
+      }
+      return;
+    }
+
+    const subject = `[Proposition vidéo] ${categoryLabel} — ${name}`;
+    const bodyLines = [
+      `Créateur / chaîne : ${name}`,
+      `Catégorie choisie : ${categoryLabel}`,
+      `Plateforme : ${platform}`,
+      `Lien de la vidéo : ${link}`,
+      "",
+      message || "(pas de message additionnel)",
+    ];
+    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+
+    window.location.href = mailtoUrl;
+
+    if (status) {
+      status.textContent = "Votre client mail va s'ouvrir avec le message pré-rempli : il ne restera plus qu'à l'envoyer.";
+      status.classList.add("visible");
+    }
+  });
 }
