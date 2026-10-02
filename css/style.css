@@ -584,6 +584,26 @@ section { padding: 96px 0; }
   border: 1px solid var(--border-glow);
   display: block;
 }
+.card-media.has-img { position: relative; padding: 0; overflow: hidden; }
+.card-media.has-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card-media .media-credit {
+  position: absolute; right: 8px; bottom: 6px;
+  font-size: 10.5px; color: rgba(255,255,255,0.85);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+}
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 8px auto 24px;
+}
+.detail-gallery figure { margin: 0; }
+.detail-gallery img {
+  width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;
+  border-radius: var(--radius); border: 1px solid var(--border-glow);
+}
+.detail-gallery figcaption { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
 .image-credit {
   font-size: 11.5px;
   color: var(--text-dim);
