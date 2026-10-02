@@ -44,6 +44,11 @@ Les infos suivantes sont **vérifiées et sourcées** (recoupement de plusieurs 
 
 Ce qui reste en **placeholder** ("exemple") faute de source fiable à ce jour : missions détaillées, armes de corps à corps précises, tenues nommées, faune spécifique. Rien n'est inventé — ces fiches restent volontairement vides plutôt que de présenter une supposition comme un fait.
 
+## Images
+
+- `assets/img/official/` : captures officielles de la galerie média de Rockstar (créditées sur chaque page).
+- `assets/img/real/` : photos réelles sous licence libre (Wikimedia Commons) pour les fiches sans visuel officiel ; auteurs et licences listés sur `credits.html` et sur chaque fiche. Ce ne sont pas des captures du jeu.
+
 ## À faire avant une mise en ligne publique
 
 - Les balises `og:image`, `og:url` (dans le `<head>` de chaque page) et les liens du fichier `rss.xml` utilisent le domaine provisoire `vicecitynews.example` — à remplacer par le vrai nom de domaine une fois le site déployé (recherche/remplacement global).
