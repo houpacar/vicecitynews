@@ -646,6 +646,60 @@ section { padding: 96px 0; }
 }
 .detail-body p { margin-bottom: 20px; }
 .detail-body p:last-child { margin-bottom: 0; }
+.detail-body a { color: var(--cyan); }
+.detail-body strong { color: var(--text-light); }
+.detail-body h2 {
+  font-size: 19px;
+  color: var(--text-light);
+  margin: 40px 0 14px;
+  letter-spacing: 0.5px;
+}
+.detail-body ul { margin: 0 0 22px 22px; }
+.detail-body li { margin-bottom: 8px; }
+.detail-body .detail-gallery { margin: 26px 0 30px; }
+
+/* Encadré « À retenir » en tête d'article */
+.key-facts {
+  background: linear-gradient(120deg, rgba(255,47,208,0.10), rgba(0,229,255,0.06));
+  border: 1px solid var(--border-glow);
+  border-left: 3px solid var(--magenta);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 0 0 30px;
+}
+.key-facts h3 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--magenta);
+  margin-bottom: 10px;
+}
+.key-facts ul { margin: 0 0 0 18px; }
+.key-facts li { margin-bottom: 6px; }
+
+/* Mention « non confirmé » dans le corps d'un article */
+.note-unconfirmed {
+  border-left: 3px solid var(--yellow);
+  padding: 4px 0 4px 16px;
+  font-size: 15px;
+  color: var(--text-dim);
+}
+
+/* Liens « À lire aussi » en pied d'article */
+.related-links {
+  max-width: 760px;
+  margin: 28px auto 0;
+}
+.related-links h3 { font-size: 13px; letter-spacing: 2px; color: var(--cyan); margin-bottom: 12px; }
+.related-links ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.related-links a {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border-glow);
+  border-radius: 999px;
+  color: var(--text-light);
+  font-size: 14px;
+}
+.related-links a:hover { border-color: var(--cyan); color: var(--cyan); }
 .detail-source {
   max-width: 760px;
   margin: 32px auto 0;
