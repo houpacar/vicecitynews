@@ -868,3 +868,91 @@ section { padding: 96px 0; }
   .forum-latest { border-left: none; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; width: 100%; }
   .video-submit-form { grid-template-columns: 1fr; }
 }
+
+/* ---------- Jauges de statistiques (fiches armes) ---------- */
+.weapon-stats {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  padding: 22px 24px 18px;
+  margin: 0 0 32px;
+  box-shadow: 0 0 30px rgba(123, 47, 247, 0.15);
+}
+.weapon-stats h3 { font-size: 13px; letter-spacing: 2px; color: var(--cyan); margin-bottom: 16px; }
+.stat-list { display: grid; gap: 12px; }
+.stat-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 38px;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+}
+.stat-label { color: var(--text-light); font-weight: 600; }
+.stat-label em { color: var(--text-dim); font-weight: 400; font-size: 12.5px; }
+.stat-bar {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+.stat-fill {
+  position: absolute; inset: 0 auto 0 0;
+  width: var(--v);
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--magenta), var(--cyan));
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
+  transition: width 0.9s cubic-bezier(.2,.8,.2,1);
+}
+.weapon-stats.pre .stat-fill { width: 0; transition: none; }
+.stat-row.est .stat-fill {
+  background: repeating-linear-gradient(135deg, var(--yellow) 0 6px, rgba(255, 209, 102, 0.45) 6px 12px);
+  box-shadow: none;
+}
+.stat-val { font-family: var(--font-display); font-size: 14px; color: var(--text-light); text-align: right; }
+.stat-note { font-size: 12.5px; line-height: 1.6; color: var(--text-dim); margin: 16px 0 0 !important; }
+.stat-note a { color: var(--cyan); }
+@media (max-width: 560px) {
+  .stat-row { grid-template-columns: 1fr 34px; gap: 4px 10px; }
+  .stat-row .stat-label { grid-column: 1 / -1; }
+}
+
+/* ---------- Comparateur d'armes ---------- */
+.compare-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-glow);
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 40px;
+}
+.compare-panel h2 { margin-bottom: 6px; }
+.compare-panel > p { color: var(--text-muted); margin-bottom: 18px; }
+.compare-selects { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.compare-selects select {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--bg-panel-light);
+  color: var(--text-light);
+  border: 1px solid var(--border-glow);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+.compare-selects label { display: block; font-size: 13px; color: var(--text-dim); margin-bottom: 6px; letter-spacing: 1px; }
+.compare-grid { display: grid; gap: 14px; }
+.compare-row { display: grid; grid-template-columns: 140px 1fr; gap: 14px; align-items: center; }
+.compare-row .stat-label { font-size: 15px; }
+.compare-bars { display: grid; gap: 5px; }
+.compare-bars .stat-row { grid-template-columns: 1fr 38px; gap: 10px; }
+.compare-bars .b .stat-fill { background: linear-gradient(90deg, var(--orange), var(--yellow)); box-shadow: 0 0 12px rgba(255, 122, 48, 0.45); }
+.compare-legend { display: flex; gap: 18px; font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px; flex-wrap: wrap; }
+.compare-legend span::before { content: ""; display: inline-block; width: 22px; height: 8px; border-radius: 4px; margin-right: 7px; vertical-align: middle; }
+.compare-legend .la::before { background: linear-gradient(90deg, var(--magenta), var(--cyan)); }
+.compare-legend .lb::before { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
+.compare-na { font-size: 13px; color: var(--text-dim); font-style: italic; }
+@media (max-width: 640px) {
+  .compare-selects { grid-template-columns: 1fr; }
+  .compare-row { grid-template-columns: 1fr; gap: 6px; }
+}
+.compare-bars .stat-row.est .stat-fill { background: repeating-linear-gradient(135deg, var(--yellow) 0 6px, rgba(255, 209, 102, 0.45) 6px 12px); box-shadow: none; }
+.compare-bars .stat-row.b.est .stat-fill { background: repeating-linear-gradient(135deg, var(--orange) 0 6px, rgba(255, 122, 48, 0.45) 6px 12px); }

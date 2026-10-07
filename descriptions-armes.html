@@ -70,7 +70,7 @@
       <div class="section-head">
         <div>
           <h2>Armes</h2>
-          <p><strong>41 armes</strong> ont déjà été recensées dans les bandes-annonces et captures officielles, réparties en 8 catégories. La personnalisation (attachements) est confirmée, et le port est limité à 2 fusils + 2 pistolets à la fois — le reste se range dans le coffre du véhicule. Depuis l'Extended Look du 27 août 2026, on sait aussi qu'il est possible de <strong>basculer instantanément entre deux armes déjà équipées</strong>, sans passer par la molette.</p>
+          <p><strong>41 armes</strong> ont déjà été recensées dans les bandes-annonces et captures officielles, réparties en 8 catégories. La personnalisation (attachements) est confirmée, et le port est limité à 2 fusils + 2 pistolets à la fois — le reste se range dans le coffre du véhicule. Chaque fiche affiche désormais des <strong>jauges de statistiques</strong> (dégâts, cadence, précision, portée, chargeur, mobilité) et un <a href="#comparateur" style="color:var(--cyan);">comparateur</a> permet de les opposer. Depuis l'Extended Look du 27 août 2026, on sait aussi qu'il est possible de <strong>basculer instantanément entre deux armes déjà équipées</strong>, sans passer par la molette.</p>
         </div>
       </div>
       <div class="detail-gallery">
@@ -94,6 +94,21 @@
         <button class="filter-chip" data-filter="lourde">Lourdes</button>
         <button class="filter-chip" data-filter="jet">Jet / explosifs</button>
         <button class="filter-chip" data-filter="melee">Corps à corps</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="comparateur-section" style="padding-top:0;">
+    <div class="container">
+      <div class="compare-panel" id="comparateur">
+        <h2>Comparateur d'armes</h2>
+        <p>Choisissez deux armes pour comparer leurs jauges. Les valeurs sont les statistiques officielles de Rockstar (Social Club) pour l'arme équivalente de GTA V : celles de GTA 6 n'ont pas encore été publiées. La mobilité est une estimation de Vice City News.</p>
+        <div class="compare-selects">
+          <div><label for="cmp-a">ARME 1</label><select id="cmp-a"></select></div>
+          <div><label for="cmp-b">ARME 2</label><select id="cmp-b"></select></div>
+        </div>
+        <div class="compare-legend"><span class="la"></span><span class="lb"></span></div>
+        <div class="compare-grid"></div>
       </div>
     </div>
   </section>
@@ -364,5 +379,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/weapon-stats.js"></script>
 </body>
 </html>
