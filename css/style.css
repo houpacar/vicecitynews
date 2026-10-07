@@ -1079,3 +1079,13 @@ section { padding: 96px 0; }
 .chip { font-size: 12.5px; padding: 3px 10px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.15); color: var(--text-muted); }
 .chip-hl { border-color: var(--magenta); color: var(--text-light); background: rgba(255, 47, 208, 0.15); }
 @media (max-width: 560px) { .spec-line { grid-template-columns: 1fr; gap: 4px; } }
+
+.source-note {
+  font-size: 14px;
+  color: var(--text-muted);
+  border-left: 3px solid var(--border-glow);
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.source-note .tag { margin-right: 8px; }
