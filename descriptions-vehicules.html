@@ -71,7 +71,7 @@
       <div class="section-head">
         <div>
           <h2>Véhicules</h2>
-          <p><strong>221 véhicules</strong> ont déjà été identifiés dans les bandes-annonces, captures et artworks officiels de GTA 6 : nouveaux modèles et retours de la série (voitures, SUV, camions, motos, bateaux, hélicoptères…). Plus de 200 sont repérés, jusqu'à 300 attendus au lancement. L'édition Ultimate ajoute deux garages exclusifs de personnalisation : Rideout Customs et One-Eyed Willie (tout-terrain).</p>
+          <p><strong>221 véhicules</strong> ont déjà été identifiés dans les bandes-annonces, captures et artworks officiels de GTA 6 : nouveaux modèles et retours de la série (voitures, SUV, camions, motos, bateaux, hélicoptères…). Plus de 200 sont repérés, jusqu'à 300 attendus au lancement. L'édition Ultimate ajoute deux garages exclusifs de personnalisation : Rideout Customs et One-Eyed Willie (tout-terrain). Les 101 véhicules qui reviennent de GTA V affichent désormais des <strong>jauges de performances</strong> (vitesse, accélération, freinage, adhérence), et un <a href="#comparateur-vehicules" style="color:var(--cyan);">comparateur</a> permet de les opposer.</p>
         </div>
       </div>
       <div class="filters" data-target="#vehicules-list .card">
@@ -83,6 +83,21 @@
         <button class="filter-chip" data-filter="suv">SUV &amp; pick-up</button>
         <button class="filter-chip" data-filter="camion">Camions &amp; bus</button>
         <button class="filter-chip" data-filter="autre">Autres</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="comparateur-vehicules-section" style="padding-top:0;">
+    <div class="container">
+      <div class="compare-panel" id="comparateur-vehicules">
+        <h2>Comparateur de véhicules</h2>
+        <p>Comparez deux des 101 véhicules qui reviennent de GTA V. Les jauges sont les statistiques officielles de Rockstar (Social Club) pour leur version GTA V : celles de GTA 6 n'ont pas encore été publiées.</p>
+        <div class="compare-selects">
+          <div><label for="vcmp-a">VÉHICULE 1</label><select id="vcmp-a"></select></div>
+          <div><label for="vcmp-b">VÉHICULE 2</label><select id="vcmp-b"></select></div>
+        </div>
+        <div class="compare-legend"><span class="la"></span><span class="lb"></span></div>
+        <div class="compare-grid"></div>
       </div>
     </div>
   </section>
@@ -1253,5 +1268,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/vehicle-compare.js"></script>
 </body>
 </html>
