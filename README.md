@@ -77,3 +77,8 @@ Tu n'as pas besoin de tout maîtriser tout de suite — demande-moi simplement d
 ## Mention légale
 
 Vice City News est un site de fans indépendant. « Grand Theft Auto », « GTA » et tout élément visuel ou nom associé sont des marques déposées de Rockstar Games / Take-Two Interactive. Ce projet n'utilise aucun asset (logo, image, texte) protégé par leurs droits d'auteur — toute l'identité visuelle (couleurs, formes, logo) est originale.
+
+
+## Forum
+
+Le forum est un phpBB 3.3.19 (pack français) installé sur l'hébergement Plesk de domaine.fr, à l'adresse https://forum.vicecitynews.fr (base MariaDB `vcn_forum`, certificat Let's Encrypt). Inscriptions avec activation par e-mail + question anti-robot ; extension VigLink désactivée. La page `forum.html` du site sert de porte d'entrée vers le forum.
