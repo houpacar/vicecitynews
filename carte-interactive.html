@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carte interactive de Leonida — Vice City News</title>
+<meta name="description" content="Explorez Leonida, l'État de GTA 6 : comtés, régions, villes, quartiers et points d'intérêt, sur un schéma interactif.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vice City News">
+<meta property="og:title" content="Carte interactive de Leonida — Vice City News">
+<meta property="og:description" content="Explorez Leonida, l'État de GTA 6 : comtés, régions, villes, quartiers et points d'intérêt, sur un schéma interactif.">
+<meta property="og:image" content="https://vicecitynews.fr/assets/img/og-default.png">
+<meta property="og:url" content="https://vicecitynews.fr/carte-interactive.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Carte interactive de Leonida — Vice City News">
+<meta name="twitter:description" content="Explorez Leonida, l'État de GTA 6 : comtés, régions, villes, quartiers et points d'intérêt, sur un schéma interactif.">
+
+<link rel="canonical" href="https://vicecitynews.fr/carte-interactive.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="Vice City News — Actualités" href="rss.xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-scene"></div>
+<div class="bg-stars"></div>
+<div class="bg-grid"></div>
+
+<div class="demo-banner">🚧 Site de démonstration — contenu vérifié, mais site en construction.</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+      <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+        <li><a href="guides.html" class="nav-link">Guides</a></li>
+        <li><a href="astuces.html" class="nav-link">Astuces</a></li>
+        <li class="nav-item dropdown open">
+          <a href="descriptions.html" class="nav-link active">Équipement</a>
+          <div class="dropdown-menu">
+            <a href="descriptions-armes.html">Armes</a>
+            <a href="descriptions-vehicules.html">Véhicules</a>
+            <a href="descriptions-maps.html">Maps</a>
+            <a href="carte-interactive.html">Carte interactive</a>
+            <a href="descriptions-items.html">Items</a>
+            <a href="descriptions-personnages.html">Personnages</a>
+            <a href="descriptions-missions.html">Missions</a>
+          </div>
+        </li>
+        <li><a href="videos.html" class="nav-link">Vidéos</a></li>
+        <li><a href="forum.html" class="nav-link">Forum</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;"><a href="descriptions.html" style="color:var(--cyan);">Équipement</a> / <a href="descriptions-maps.html" style="color:var(--cyan);">Maps</a> / Carte interactive</p>
+      <div class="section-head">
+        <div>
+          <h2>Carte interactive de Leonida</h2>
+          <p>Cliquez sur un comté ou un point pour découvrir les lieux connus de GTA 6. <strong>28 lieux</strong> et <strong>6 comtés</strong> sont placés sur ce schéma, chacun relié à sa fiche.</p>
+        </div>
+      </div>
+      <p class="note-unconfirmed" style="max-width:900px;">Schéma indicatif, pas la carte du jeu : Rockstar n'a pas encore dévoilé la carte officielle de Leonida. Les positions sont déduites des relations entre comtés recensées par le GTA Wiki (Vice-Dale au sud-est, Leonard au nord de Vice-Dale, Kelly à l'ouest, Ambrosia au centre, un comté au nord autour de Mount Kalaga). Il sera remplacé par la vraie carte dès sa publication.</p>
+      <div class="filters map-filters"><button class="filter-chip active" data-map-filter="all">Tout</button><button class="filter-chip" data-map-filter="region">Régions officielles</button><button class="filter-chip" data-map-filter="ville">Villes & quartiers</button><button class="filter-chip" data-map-filter="interet">Points d'intérêt</button><button class="filter-chip" data-map-filter="eau">Mers & baies</button></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="map-layout">
+        <div class="map-frame">
+<svg id="leonida-map" viewBox="0 0 600 820" role="img" aria-label="Schéma interactif de Leonida : comtés et lieux connus">
+<defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><pattern id="waves" width="24" height="12" patternUnits="userSpaceOnUse"><path d="M0 6 Q6 0 12 6 T24 6" fill="none" stroke="rgba(0,229,255,0.08)" stroke-width="1"/></pattern></defs>
+<rect x="0" y="0" width="600" height="820" fill="url(#waves)"/>
+<text class="sea-label" x="30" y="520" transform="rotate(-90 30 520)">GOLFE DU MEXIQUE</text>
+<text class="sea-label" x="580" y="300" transform="rotate(90 580 300)">OCÉAN ATLANTIQUE</text>
+<polygon class="zone zone-voisin" data-zone="gloriana" points="40,20 560,20 560,70 40,70" tabindex="0" role="button" aria-label="État de Gloriana"><title>État de Gloriana</title></polygon>
+<polygon class="zone" data-zone="nord" points="70,80 540,80 520,250 90,250" tabindex="0" role="button" aria-label="Comté du nord (présumé)"><title>Comté du nord (présumé)</title></polygon>
+<polygon class="zone" data-zone="kelly" points="90,250 245,250 250,470 150,470 110,380" tabindex="0" role="button" aria-label="Comté de Kelly"><title>Comté de Kelly</title></polygon>
+<polygon class="zone" data-zone="ambrosia" points="245,250 400,250 395,470 250,470" tabindex="0" role="button" aria-label="Comté d&#x27;Ambrosia"><title>Comté d&#x27;Ambrosia</title></polygon>
+<polygon class="zone" data-zone="leonard" points="400,250 520,250 530,470 395,470" tabindex="0" role="button" aria-label="Comté de Leonard"><title>Comté de Leonard</title></polygon>
+<polygon class="zone" data-zone="mariana" points="150,470 330,470 335,690 250,720 200,640" tabindex="0" role="button" aria-label="Comté de Mariana"><title>Comté de Mariana</title></polygon>
+<polygon class="zone" data-zone="vicedale" points="330,470 530,470 520,620 450,690 335,690" tabindex="0" role="button" aria-label="Comté de Vice-Dale"><title>Comté de Vice-Dale</title></polygon>
+<ellipse class="zone keys-island" data-zone="mariana" cx="240" cy="740" rx="14" ry="6"/>
+<ellipse class="zone keys-island" data-zone="mariana" cx="205" cy="762" rx="12" ry="5"/>
+<ellipse class="zone keys-island" data-zone="mariana" cx="172" cy="778" rx="11" ry="5"/>
+<ellipse class="zone keys-island" data-zone="mariana" cx="140" cy="790" rx="10" ry="4"/>
+<ellipse class="zone keys-island" data-zone="mariana" cx="110" cy="798" rx="9" ry="4"/>
+<text class="zone-label" x="300" y="50">GLORIANA</text>
+<text class="zone-label" x="300" y="115">COMTÉ DU NORD</text>
+<text class="zone-label" x="165" y="280">KELLY</text>
+<text class="zone-label" x="322" y="280">AMBROSIA CO.</text>
+<text class="zone-label" x="462" y="280">LEONARD</text>
+<text class="zone-label" x="240" y="500">MARIANA</text>
+<text class="zone-label" x="430" y="500">VICE-DALE</text>
+<g class="pin pin-region" data-id="vice-city" data-type="region" transform="translate(430 560)" tabindex="0" role="button" aria-label="Vice City"><circle class="pin-halo" r="16"/><circle class="pin-dot" r="9" filter="url(#glow)"/><text class="pin-label" y="-17">Vice City</text><title>Vice City</title></g>
+<g class="pin pin-region" data-id="leonida-keys" data-type="region" transform="translate(205 760)" tabindex="0" role="button" aria-label="Leonida Keys"><circle class="pin-halo" r="16"/><circle class="pin-dot" r="9" filter="url(#glow)"/><text class="pin-label" y="-17">Leonida Keys</text><title>Leonida Keys</title></g>
+<g class="pin pin-region" data-id="grassrivers" data-type="region" transform="translate(260 560)" tabindex="0" role="button" aria-label="Grassrivers"><circle class="pin-halo" r="16"/><circle class="pin-dot" r="9" filter="url(#glow)"/><text class="pin-label" y="-17">Grassrivers</text><title>Grassrivers</title></g>
+<g class="pin pin-region" data-id="mount-kalaga" data-type="region" transform="translate(300 150)" tabindex="0" role="button" aria-label="Mount Kalaga"><circle class="pin-halo" r="16"/><circle class="pin-dot" r="9" filter="url(#glow)"/><text class="pin-label" y="-17">Mount Kalaga</text><title>Mount Kalaga</title></g>
+<g class="pin pin-region" data-id="port-gellhorn" data-type="region" transform="translate(130 330)" tabindex="0" role="button" aria-label="Port Gellhorn"><circle class="pin-halo" r="16"/><circle class="pin-dot" r="9" filter="url(#glow)"/><text class="pin-label" y="-17">Port Gellhorn</text><title>Port Gellhorn</title></g>
+<g class="pin pin-region" data-id="ambrosia" data-type="region" transform="translate(320 345)" tabindex="0" role="button" aria-label="Ambrosia"><circle class="pin-halo" r="16"/><circle class="pin-dot" r="9" filter="url(#glow)"/><text class="pin-label" y="-17">Ambrosia</text><title>Ambrosia</title></g>
+<g class="pin pin-ville" data-id="downtown-vice-city" data-type="ville" transform="translate(455 585)" tabindex="0" role="button" aria-label="Downtown Vice City"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Downtown Vice City</title></g>
+<g class="pin pin-ville" data-id="peacock-bay" data-type="ville" transform="translate(405 530)" tabindex="0" role="button" aria-label="Peacock Bay"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Peacock Bay</title></g>
+<g class="pin pin-ville" data-id="southside" data-type="ville" transform="translate(420 610)" tabindex="0" role="button" aria-label="Southside"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Southside</title></g>
+<g class="pin pin-ville" data-id="tequesta" data-type="ville" transform="translate(385 575)" tabindex="0" role="button" aria-label="Tequesta"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Tequesta</title></g>
+<g class="pin pin-ville" data-id="vice-beach" data-type="ville" transform="translate(505 545)" tabindex="0" role="button" aria-label="Vice Beach"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Vice Beach</title></g>
+<g class="pin pin-ville" data-id="rialto-islands" data-type="ville" transform="translate(490 600)" tabindex="0" role="button" aria-label="Rialto Islands"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Rialto Islands</title></g>
+<g class="pin pin-interet" data-id="starfish-island" data-type="interet" transform="translate(482 570)" tabindex="0" role="button" aria-label="Starfish Island"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Starfish Island</title></g>
+<g class="pin pin-interet" data-id="portvicecity" data-type="interet" transform="translate(470 630)" tabindex="0" role="button" aria-label="PortViceCity"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>PortViceCity</title></g>
+<g class="pin pin-interet" data-id="national-coast-guard-base" data-type="interet" transform="translate(440 650)" tabindex="0" role="button" aria-label="Base de la garde côtière nationale"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Base de la garde côtière nationale</title></g>
+<g class="pin pin-interet" data-id="boone-speedway" data-type="interet" transform="translate(380 500)" tabindex="0" role="button" aria-label="Boone Speedway"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Boone Speedway</title></g>
+<g class="pin pin-interet" data-id="leonida-penitentiary" data-type="interet" transform="translate(355 520)" tabindex="0" role="button" aria-label="Leonida Penitentiary"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Leonida Penitentiary</title></g>
+<g class="pin pin-eau" data-id="south-leonida-bay" data-type="eau" transform="translate(505 660)" tabindex="0" role="button" aria-label="Baie du sud de Leonida"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Baie du sud de Leonida</title></g>
+<g class="pin pin-ville" data-id="waning-sands" data-type="ville" transform="translate(505 380)" tabindex="0" role="button" aria-label="Waning Sands"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Waning Sands</title></g>
+<g class="pin pin-interet" data-id="allied-crystal-sugar-refinery" data-type="interet" transform="translate(290 390)" tabindex="0" role="button" aria-label="Raffinerie de sucre Allied Crystal"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Raffinerie de sucre Allied Crystal</title></g>
+<g class="pin pin-interet" data-id="ambrosia-raceway-park" data-type="interet" transform="translate(355 410)" tabindex="0" role="button" aria-label="Ambrosia Raceway Park"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Ambrosia Raceway Park</title></g>
+<g class="pin pin-ville" data-id="draper-island" data-type="ville" transform="translate(100 360)" tabindex="0" role="button" aria-label="Draper Island"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Draper Island</title></g>
+<g class="pin pin-ville" data-id="watson-bay" data-type="ville" transform="translate(225 610)" tabindex="0" role="button" aria-label="Watson Bay"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Watson Bay</title></g>
+<g class="pin pin-ville" data-id="key-lento" data-type="ville" transform="translate(160 783)" tabindex="0" role="button" aria-label="Key Lento"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Key Lento</title></g>
+<g class="pin pin-interet" data-id="coast-guard-station" data-type="interet" transform="translate(255 728)" tabindex="0" role="button" aria-label="Station de la garde côtière (Leonida Keys)"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Station de la garde côtière (Leonida Keys)</title></g>
+<g class="pin pin-interet" data-id="daiquiri-republic" data-type="interet" transform="translate(120 800)" tabindex="0" role="button" aria-label="Daiquiri Republic"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Daiquiri Republic</title></g>
+<g class="pin pin-eau" data-id="gulf-of-mexico" data-type="eau" transform="translate(50 600)" tabindex="0" role="button" aria-label="Golfe du Mexique"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Golfe du Mexique</title></g>
+<g class="pin pin-eau" data-id="atlantic-ocean" data-type="eau" transform="translate(570 420)" tabindex="0" role="button" aria-label="Océan Atlantique"><circle class="pin-halo" r="13"/><circle class="pin-dot" r="6" filter="url(#glow)"/><title>Océan Atlantique</title></g>
+</svg>
+          <div class="map-zoom" aria-hidden="false">
+            <button type="button" data-zoom="in" aria-label="Zoomer">+</button>
+            <button type="button" data-zoom="out" aria-label="Dézoomer">−</button>
+            <button type="button" data-zoom="reset" aria-label="Réinitialiser la vue">⟲</button>
+          </div>
+        </div>
+        <aside class="map-panel" aria-live="polite">
+          <div class="map-search">
+            <input type="search" id="map-search" placeholder="Rechercher un lieu…" aria-label="Rechercher un lieu" list="map-places">
+            <datalist id="map-places"></datalist>
+          </div>
+          <div class="map-card">
+            <p class="map-card-empty">Sélectionnez un comté ou un lieu sur la carte.</p>
+          </div>
+          <div class="map-list-wrap">
+            <h3>LIEUX DU COMTÉ</h3>
+            <ul class="map-list"></ul>
+          </div>
+        </aside>
+      </div>
+      <div class="map-unplaced">
+        <h3>Lieux confirmés mais non localisés</h3>
+        <ul><li><a href="map-gatorland-inspired-theme-park.html">Parc d&#x27;attractions façon Gatorland</a></li><li><a href="map-miniature-golf-course.html">Minigolf à thème alligators</a></li></ul>
+      </div>
+      <div class="detail-source" style="max-width:none;">
+        Sources : <a href="https://gta.fandom.com/wiki/State_of_Leonida" target="_blank" rel="noopener">GTA Wiki (État de Leonida et pages des comtés)</a>, Rockstar Games (galerie média). Images © Rockstar Games / Take-Two Interactive.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">
+          <img src="assets/img/logo-mark.svg" alt="" class="logo-mark">
+          <span class="vc">VICE CITY</span><span class="news">NEWS</span>
+        </div>
+        <p>Site communautaire indépendant dédié à l'actualité, aux guides et à la communauté de GTA 6.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="astuces.html">Astuces</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Équipement</h4>
+        <ul>
+          <li><a href="descriptions-armes.html">Armes</a></li>
+          <li><a href="descriptions-vehicules.html">Véhicules</a></li>
+          <li><a href="descriptions-maps.html">Maps</a></li>
+          <li><a href="descriptions-items.html">Items</a></li>
+          <li><a href="descriptions-personnages.html">Personnages</a></li>
+          <li><a href="descriptions-missions.html">Missions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="#">Discord (bientôt)</a></li>
+          <li><a href="#">X / Twitter (bientôt)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p><strong>Vice City News</strong> est un site de fans indépendant, non-officiel et non affilié à Rockstar Games, Take-Two Interactive ou toute entité liée. « Grand Theft Auto », « GTA » et « Vice City » sont des marques déposées de leurs propriétaires respectifs. Les informations publiées proviennent de sources publiques et sont fournies à titre informatif uniquement. Certaines captures et illustrations officielles du jeu sont utilisées à titre informatif et créditées à chaque usage ; elles demeurent la propriété de Rockstar Games / Take-Two Interactive. Aucun logo officiel n'est utilisé comme identité visuelle de ce site.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vice City News</span>
+      <span><a href="credits.html" style="color:inherit;text-decoration:underline;">Crédits photos</a> · Contenu de démonstration</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/carte-data.js"></script>
+<script src="js/carte.js"></script>
+</body>
+</html>
