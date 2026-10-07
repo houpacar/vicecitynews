@@ -51,8 +51,8 @@ Ce qui reste en **placeholder** ("exemple") faute de source fiable à ce jour : 
 
 ## À faire avant une mise en ligne publique
 
-- Les balises `og:image`, `og:url` (dans le `<head>` de chaque page) et les liens du fichier `rss.xml` utilisent le domaine provisoire `vicecitynews.example` — à remplacer par le vrai nom de domaine une fois le site déployé (recherche/remplacement global).
-- Le formulaire "Proposer une vidéo" (page `videos.html`) envoie vers l'adresse placeholder `contact@vicecitynews.example` (voir `initVideoSubmitForm()` dans `js/main.js`) — à remplacer par une vraie adresse de contact avant la mise en ligne.
+- Le site est publié sur **https://vicecitynews.fr** via GitHub Pages (dépôt `houpacar/vicecitynews`, branche `master`, dossier racine). Le fichier `CNAME` indique le domaine à GitHub ; `.nojekyll` désactive le traitement Jekyll ; `sitemap.xml` et `robots.txt` servent au référencement. Les balises `og:url`, `og:image` et `canonical` utilisent des adresses absolues en `https://vicecitynews.fr` (le script de préparation est à relancer si de nouvelles pages sont ajoutées, ou mettre à jour `sitemap.xml` à la main).
+- Le formulaire "Proposer une vidéo" (page `videos.html`) envoie vers `contact@vicecitynews.fr` (voir `initVideoSubmitForm()` dans `js/main.js`) — cette adresse doit être créée ou redirigée chez domaine.fr.
 - `404.html` est reconnu automatiquement par GitHub Pages et Netlify comme page d'erreur ; sur un autre hébergeur, il faudra peut-être le configurer manuellement.
 
 ## Prochaines étapes possibles

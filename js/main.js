@@ -101,7 +101,7 @@ function initVideoSubmitForm() {
   if (!form) return;
 
   const status = document.getElementById("video-submit-status");
-  const CONTACT_EMAIL = "contact@vicecitynews.example"; // à remplacer par une vraie adresse avant mise en ligne
+  const CONTACT_EMAIL = "contact@vicecitynews.fr"; // adresse à créer (ou rediriger) chez domaine.fr
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
