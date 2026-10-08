@@ -605,7 +605,7 @@ section { padding: 96px 0; }
 }
 .detail-gallery figure { margin: 0; }
 .detail-gallery img {
-  width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;
+  width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; display: block;
   border-radius: var(--radius); border: 1px solid var(--border-glow);
 }
 .detail-gallery figcaption { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
